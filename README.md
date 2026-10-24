@@ -8,8 +8,8 @@ Sul display del TM6 ottieni:
 |---|---|
 | Pesatura ingredienti | Passaggio dedicato "Pesa e aggiungi" con collegamento alla bilancia |
 | Tempo / temperatura / velocità / antiorario | Impostazioni pronte da avviare con un tocco |
-| Rosolare, Impastare, Turbo | Modalità guidate |
-| Altre modalità (Cottura lenta, Sottovuoto, Fermentazione…) | Testo con l'indicazione di impostarle a mano |
+| Impastare, Turbo, Riscaldare | Modalità guidate |
+| Rosolare e Cottura a vapore (nell'editor Cookidoo solo per TM7), Cottura lenta, Sottovuoto, Fermentazione… | Testo con l'indicazione di impostarle dal Bimby |
 
 > **Nota.** Il server usa la libreria open source `cookidoo-api`, non ufficiale. Vorwerk non offre API pubbliche e potrebbe cambiare il servizio in qualsiasi momento.
 
@@ -84,6 +84,7 @@ Anche Claude in chat può usare gli strumenti:
 - `verifica_connessione`: login, abbonamento e dispositivi
 - `invia_ricetta`: crea la ricetta
 - `ricette_inviate`: elenca le ricette create
+- `leggi_ricetta_grezza`: mostra una ricetta esattamente come Cookidoo l'ha salvata (diagnostica)
 
 ## Sicurezza
 
