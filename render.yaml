@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: bimby-bridge
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: COOKIDOO_EMAIL
+        sync: false
+      - key: COOKIDOO_PASSWORD
+        sync: false
+      - key: BRIDGE_SECRET
+        sync: false
+      - key: COOKIDOO_COUNTRY
+        value: it
+      - key: COOKIDOO_LANGUAGE
+        value: it-IT
